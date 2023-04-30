@@ -24,23 +24,24 @@
 }
 
 .profile__container {
-  @include flex(center);
   flex-direction: column;
   color: rgb(79, 78, 78);
 }
 
 .profile__title {
-  display: flex;
-  align-items: center;
+  @include flex(center);
   font-weight: bold;
   font-size: 25px;
-  font-family: "Anton", sans-serif;
-  font-family: "Hahmlet", serif;
+
+  span {
+    font-family: "Anton", sans-serif;
+    font-family: "Hahmlet", serif;
+    margin-left: 1rem;
+  }
 }
 
 .profile__title__icon {
   font-size: 40px;
-  margin-right: 1rem;
 }
 
 .profile__title__content {
@@ -48,4 +49,49 @@
   font-size: 20px;
   font-family: "Anton", sans-serif;
   font-family: "Hahmlet", serif;
+}
+
+@media only screen and (min-width: 2560px) {
+  .profile__title {
+    font-size: 28px;
+  }
+  .profile__title__content {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .profile__title {
+    font-size: 17px;
+  }
+  .profile__title__content {
+    font-size: 12px;
+  }
+
+  .profile__title__icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .profile__wrapper {
+    justify-content: space-between;
+    width: 300px;
+  }
+  .fade__container {
+    @include flex(center);
+  }
+
+  .profile__title {
+    span {
+      margin: 0;
+    }
+  }
 }
