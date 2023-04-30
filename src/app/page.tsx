@@ -1,9 +1,11 @@
-import pages from "./page.module.scss";
+import Intro from "@/app/components/Intro/Intro";
 
 const page = () => {
-  return <main>
-    
-  </main>;
+  return (
+    <main>
+      <Intro />
+    </main>
+  );
 };
 
 export default page;
