@@ -8,17 +8,18 @@
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  object-position: center;
   filter: brightness(40%);
 }
 
 .typingText {
-  width: 28.5ch;
+  width: 35.5ch;
   border-right: 0.05em solid black;
   border-right: 2px solid;
   animation: typing 2s steps(30), blink 1s infinite;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 2em;
+  font-size: 30px;
   position: absolute;
   color: white;
 }
@@ -32,5 +33,17 @@
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .typingText {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .typingText {
+    font-size: 16px;
   }
 }
