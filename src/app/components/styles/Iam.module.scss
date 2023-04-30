@@ -30,3 +30,13 @@
   font-family: "Anton", sans-serif;
   font-family: "Hahmlet", serif;
 }
+
+@media only screen and (max-width: 768px) {
+  .underline {
+    border: 3px solid rgb(116, 212, 97);
+  }
+
+  .content__item {
+    font-size: 13px;
+  }
+}
