@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 html,
 body,
 div,
@@ -86,6 +87,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+  font-family: "Anton", sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -136,10 +138,6 @@ a {
 
 a:visited {
   color: black;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 h1 {

@@ -1,5 +1,5 @@
 import Intro from "@/app/components/Intro";
-import AboutMe from "./components/AboutMe";
+import AboutMe from "@/app/components/AboutMe";
 
 const page = () => {
   return (
