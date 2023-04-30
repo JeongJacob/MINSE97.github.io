@@ -6,16 +6,6 @@
   align-items: center;
 }
 
-.wrapper {
-  width: 80vw;
-  margin: 0 auto;
-  padding-top: 3rem;
-}
-
-.container {
-  text-align: center;
-}
-
 .profile__wrapper {
   @include flex(space-evenly);
   flex-wrap: wrap;
@@ -61,12 +51,6 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .container {
-    h1 {
-      font-size: 40px;
-    }
-  }
-
   .profile__title {
     font-size: 17px;
   }

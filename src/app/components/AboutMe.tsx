@@ -9,7 +9,6 @@ import aboutme from "@/app/components/styles/AboutMe.module.scss";
 
 const AboutMe = () => {
   return (
-    <div className={aboutme.wrapper}>
       <div className={aboutme.container}>
         <h1>About Me</h1>
         <Fade duration={3000} className={aboutme.fade__container}>
@@ -85,7 +84,6 @@ const AboutMe = () => {
           </div>
         </Fade>
       </div>
-    </div>
   );
 };
 export default AboutMe;
