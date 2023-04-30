@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Hahmlet:wght@500&display=swap");
+
+.container {
+  margin-top: 2rem;
+}
+
+.underline {
+  border: 5px solid rgb(116, 212, 97);
+  animation: underline 3s;
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
