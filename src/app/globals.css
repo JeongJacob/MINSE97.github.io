@@ -140,10 +140,6 @@ a:visited {
   color: black;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 h1 {
   font-size: 4rem;
   font-weight: bold;
