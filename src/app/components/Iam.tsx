@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { Fade } from "react-awesome-reveal";
 import iam from "@/app/components/styles/Iam.module.scss";
 
 const Iam = () => {
@@ -23,7 +24,30 @@ const Iam = () => {
   return (
     <div className={iam.container}>
       <h1>I Am</h1>
-      <hr className={onScroll ? iam.underline : ""} />
+      <hr className={onScroll ? iam.underline : ""} ref={sectionRef} />
+      <div className={iam.content__container}>
+        <Fade delay={700} cascade damping={0.1}>
+          <p className={iam.content__item}>
+            이런 사람입니다.이런 사람입니다.이런 사람입니다.이런 사람입니다.이런
+            사람입니다.이런 사람입니다.이런 사람입니다.이런 사람입니다.이런
+            사람입니다.
+          </p>
+        </Fade>
+        <Fade delay={1400} cascade damping={0.1}>
+          <p className={iam.content__item}>
+            이런 사람입니다.이런 사람입니다.이런 사람입니다.이런 사람입니다.이런
+            사람입니다.이런 사람입니다.이런 사람입니다.이런 사람입니다.이런
+            사람입니다.
+          </p>
+        </Fade>
+        <Fade delay={2100} cascade damping={0.1}>
+          <p className={iam.content__item}>
+            이런 사람입니다.이런 사람입니다.이런 사람입니다.이런 사람입니다.이런
+            사람입니다.이런 사람입니다.이런 사람입니다.이런 사람입니다.이런
+            사람입니다.
+          </p>
+        </Fade>
+      </div>
     </div>
   );
 };

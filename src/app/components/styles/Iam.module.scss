@@ -17,3 +17,16 @@
     width: 100%;
   }
 }
+
+.content__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 250px;
+}
+
+.content__item {
+  font-family: "Anton", sans-serif;
+  font-family: "Hahmlet", serif;
+}
