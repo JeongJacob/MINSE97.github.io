@@ -20,7 +20,7 @@ const SkillCard = (props: SkillProps) => {
           className={
             title === "Language"
               ? sc.language
-              : title === "FrameWork"
+              : title === "FrameWork/Library"
               ? sc.framework
               : sc.deploy
           }
@@ -31,7 +31,7 @@ const SkillCard = (props: SkillProps) => {
           className={
             title === "Language"
               ? sc.content__language
-              : title === "FrameWork"
+              : title === "FrameWork/Library"
               ? sc.content__framework
               : sc.content__deploy
           }

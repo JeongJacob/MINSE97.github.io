@@ -1,23 +1,23 @@
 import SkillCard from "./SkillCard";
+import skills from "@/app/components/styles/Skills.module.scss";
 
 const Skills = () => {
   return (
-    <div>
-      <h2>SKILLS</h2>
-      <div>
+    <div className={skills.wrapper}>
+      <h1>SKILLS</h1>
+      <hr className={skills.underline} />
+      <div className={skills.container}>
         <SkillCard
           title="Language"
           content={["HTML", "CSS", "JavaScript", "TypeScript"]}
         />
         <SkillCard
-          title="FrameWork"
+          title="FrameWork/Library"
           content={[
             "React.js",
             "Next.js",
             "Styled-Components",
             "SCSS",
-            "Redux",
-            "Recoil",
             "Axios",
           ]}
         />

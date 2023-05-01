@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Hahmlet:wght@500&display=swap");
+
 .wrapper,
 .wrapper__active {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
   position: relative;
   margin: 2rem;
   perspective: 1100px;
@@ -41,10 +43,15 @@
 .framework,
 .deploy {
   p {
-    font-size: 30px;
-    color: black;
+    font-size: 25px;
+    color: rgb(36, 36, 36);
     position: relative;
     z-index: 1000;
+    font-family: "Anton", sans-serif;
+    font-family: "DM Serif Display", serif;
+    font-family: "Hahmlet", serif;
+    transform: rotate(0.04deg);
+    font-weight: bold;
   }
 }
 
@@ -73,22 +80,26 @@
 
 .deploy,
 .content__deploy {
-  background-image: url("https://kinsta.com/wp-content/uploads/2018/04/what-is-github-1-1.png");
+  background-image: url("https://cdn-icons-png.flaticon.com/512/25/25231.png");
 }
 
 .content__language,
 .content__framework,
 .content__deploy {
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
-  font-size: 13px;
   transform: rotateY(180deg);
 
   p {
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     position: relative;
     z-index: 1000;
+    font-family: "Anton", sans-serif;
+    font-family: "DM Serif Display", serif;
+    font-family: "Hahmlet", serif;
+    transform: rotate(0.04deg);
   }
 }
 
@@ -102,9 +113,38 @@
   bottom: 0;
   right: 0;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.58);
 }
 
 .wrapper__active .container__active {
   transform: rotateY(180deg);
+}
+
+@media only screen and (min-width: 1024px) {
+  .framework > p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .wrapper,
+  .wrapper__active {
+    width: 400px;
+    height: 350px;
+  }
+  .language,
+  .framework,
+  .deploy {
+    p {
+      font-size: 40px;
+    }
+  }
+
+  .content__language,
+  .content__framework,
+  .content__deploy {
+    p {
+      font-size: 35px;
+    }
+  }
 }
