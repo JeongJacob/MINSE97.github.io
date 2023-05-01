@@ -3,9 +3,25 @@ import SkillCard from "./SkillCard";
 const Skills = () => {
   return (
     <div>
-      <h2>Skills</h2>
+      <h2>SKILLS</h2>
       <div>
-        <SkillCard title="HTML" content="안녕하세요" />
+        <SkillCard
+          title="Language"
+          content={["HTML", "CSS", "JavaScript", "TypeScript"]}
+        />
+        <SkillCard
+          title="FrameWork"
+          content={[
+            "React.js",
+            "Next.js",
+            "Styled-Components",
+            "SCSS",
+            "Redux",
+            "Recoil",
+            "Axios",
+          ]}
+        />
+        <SkillCard title="Deploy" content={["Git", "AWS S3", "Vercel"]} />
       </div>
     </div>
   );
