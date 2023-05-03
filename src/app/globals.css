@@ -171,3 +171,9 @@ h4 {
     font-size: 30px;
   }
 }
+
+body {
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to bottom, #ffffff, #ece9e6);
+  background: linear-gradient(to bottom, #ffffff, #ece9e6);
+}
