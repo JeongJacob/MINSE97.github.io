@@ -1,0 +1,108 @@
+.wrapper {
+  margin-top: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.info__wrapper {
+  display: none;
+  width: 800px;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.info__container {
+  padding-left: 2rem;
+  height: 400px;
+  text-align: left;
+  margin-bottom: 12rem;
+
+  ol,
+  li,
+  p,
+  span {
+    font-size: 17px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+  }
+
+  h2,
+  h3 {
+    margin-bottom: 0.3rem;
+    font-family: "IBM Plex Sans KR", sans-serif;
+  }
+}
+
+.info__title__container {
+  margin-bottom: 1rem;
+}
+
+.info__content {
+  margin-bottom: 1rem;
+}
+
+.info__team__container {
+  margin-bottom: 1rem;
+}
+
+.info__role__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  li {
+    margin-bottom: 0.3rem;
+  }
+}
+
+.info__team__fe__content::before {
+  color: rgb(58, 81, 157);
+  content: "프론트엔드 ";
+  font-weight: bold;
+}
+
+.info__team__be__content::before {
+  color: rgb(22, 137, 74);
+  content: "백엔드 ";
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    justify-content: space-between;
+  }
+  .info__wrapper {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .info__container {
+    ol,
+    li,
+    p,
+    span {
+      font-size: 20px;
+    }
+  }
+  .info__role__container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .info__wrapper {
+    width: 1000px;
+  }
+  .info__container {
+    margin-bottom: 18rem;
+    ol,
+    li,
+    p,
+    span {
+      font-size: 27px;
+    }
+  }
+}

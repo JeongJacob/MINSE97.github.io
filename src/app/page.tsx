@@ -3,6 +3,7 @@ import AboutMe from "@/app/components/AboutMe";
 import Iam from "./components/Iam";
 import p from "@/app/page.module.scss";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 const page = () => {
   return (
@@ -12,6 +13,7 @@ const page = () => {
         <AboutMe />
         <Iam />
         <Skills />
+        <Projects />
       </div>
     </main>
   );
