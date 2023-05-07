@@ -10,7 +10,7 @@ const ProjectCard = ({ project }: { project: projectProps }) => {
         <Image
           src={`/${project.name}.png`}
           alt="프로젝트"
-          width={project.name === "nerdnest" ? 200 : 300}
+          width={300}
           height={200}
         />
       </div>
