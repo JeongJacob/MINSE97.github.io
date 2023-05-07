@@ -1,0 +1,106 @@
+@mixin flex($value) {
+  display: flex;
+  justify-content: $value;
+  align-items: center;
+}
+
+.content__wrapper {
+  width: 300px;
+  height: 400px;
+  margin: 10rem 0;
+  border-radius: 40px;
+  border: 5px solid rgb(100, 100, 100);
+}
+
+.logo__container {
+  @include flex(center);
+  width: 100%;
+  height: 50%;
+
+  img {
+    padding: 5px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    object-fit: cover;
+  }
+}
+
+.content__container {
+  width: 100%;
+  height: 50%;
+}
+
+.content__skills__container {
+  @include flex(space-around);
+  flex-wrap: wrap;
+  height: 30%;
+
+  span {
+    border-radius: 7px;
+    padding: 5px;
+    height: 27px;
+    margin: 0.1rem;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: white;
+  }
+
+  :nth-child(1) {
+    background-color: #61dafb;
+  }
+  :nth-child(2) {
+    background-color: #3178c6;
+  }
+  :nth-child(3) {
+    background-color: #3678e5;
+  }
+  :nth-child(4) {
+    background-color: #db7093;
+  }
+  :nth-child(5) {
+    background-color: #5a29e4;
+  }
+}
+
+.content__link__container {
+  @include flex(space-evenly);
+  height: 30%;
+  border-bottom: 5px solid rgb(100, 100, 100);
+}
+
+.content__admin__container {
+  @include flex(space-evenly);
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  text-align: left;
+  height: 40%;
+
+  p {
+    font-family: sans-serif;
+  }
+  :first-child {
+    font-weight: bold;
+    font-size: 17px;
+
+    &::before {
+      content: "🔑";
+      margin-right: 0.5rem;
+    }
+  }
+
+  :nth-child(2)::before {
+    content: "ID: ";
+    font-weight: 500;
+  }
+
+  :nth-child(3) {
+    background-color: black;
+
+    &::before {
+      content: "PW: ";
+      font-weight: 500;
+      background-color: white;
+    }
+  }
+}
