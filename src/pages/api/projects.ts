@@ -10,7 +10,7 @@ export default async function nerdNestProject(
   res: NextApiResponse
 ) {
   const corsOptions = {
-    origin: ["https://jacob-minse97.vercel.app", "http://localhost:3000"],
+    origin: ["*"],
     methods: ["GET"],
     allowedHeaders: ["Content-Type", "Authorization"],
     preflightContinue: false,
