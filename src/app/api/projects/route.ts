@@ -5,10 +5,10 @@ export async function GET(request: Request) {
   const result = await db.collection("projects").find().toArray();
   const responseBody = JSON.stringify(result);
   try {
-    new Response(responseBody, {
+    return new Response(responseBody, {
       status: 200,
       headers: {
-        "Access-Control-Allow-Origin": "https://jacob-minse97.vercel.app",
+        "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },

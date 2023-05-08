@@ -22,7 +22,11 @@ const Projects = () => {
   useEffect(() => {
     const getProjectData = async () => {
       await axios
-        .get(`${process.env.NEXT_PUBLIC_URL}/api/projects`)
+        .get(`${process.env.NEXT_PUBLIC_URL}/api/projects`, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
         .then((res) => setProjectData(res.data));
     };
     getProjectData();
