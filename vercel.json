@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "src": "/api/projects",
+      "methods": ["GET"],
+      "headers": {
+        "Access-Control-Allow-Origin": "https://jacob-minse97.vercel.app, http://localhost:3000",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization"
+      }
+    }
+  ]
+}
