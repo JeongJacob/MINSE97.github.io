@@ -55,6 +55,10 @@
   }
 }
 
+.title__active {
+  display: none;
+}
+
 .language::after,
 .framework::after,
 .deploy::after {
