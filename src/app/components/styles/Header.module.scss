@@ -1,0 +1,26 @@
+.wrapper {
+  width: 100vw;
+  height: 52px;
+  position: fixed;
+  z-index: 10000;
+  background-color: aliceblue;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    font-size: 23px;
+  }
+}
+
+.package__right {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
