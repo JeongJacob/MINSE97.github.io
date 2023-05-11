@@ -23,7 +23,7 @@ const project = [
   },
   {
     name: "portfolio",
-    skills: ["Next.js", "TypeScript", "Scss", "Axios"],
+    skills: ["Next.js", "TypeScript", "Scss", "Axios", "Vercel"],
     github: "https://github.com/MINSE97/MINSE97.github.io",
     link: "https://jacob-minse97.vercel.app/",
   },
