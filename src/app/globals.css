@@ -181,3 +181,7 @@ body {
   background: -webkit-linear-gradient(to bottom, #ffffff, #ece9e6);
   background: linear-gradient(to bottom, #ffffff, #ece9e6);
 }
+
+html {
+  scroll-behavior: smooth;
+}
