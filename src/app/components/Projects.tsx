@@ -12,6 +12,7 @@ export interface projectProps {
   skills: string[];
   github: string;
   link: string;
+  notion?: string;
   adminID?: string;
   adminPW?: string;
 }
@@ -136,9 +137,7 @@ const Projects = () => {
               </p>
               <div className={projects.info__team__container}>
                 <h3>팀 구성</h3>
-                <span className={projects.info__team__fe__content}>
-                  1명
-                </span>{" "}
+                <span className={projects.info__team__fe__content}>1명</span>
               </div>
             </div>
           </Fade>

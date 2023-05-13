@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Hahmlet:wght@500&display=swap");
-
 @mixin flex($value) {
   display: flex;
   justify-content: $value;
   align-items: center;
+}
+
+.container {
+  margin-top: 3rem;
 }
 
 .profile__wrapper {
@@ -24,7 +26,6 @@
   font-size: 25px;
 
   span {
-    font-family: "Anton", sans-serif;
     font-family: "Hahmlet", serif;
     margin-left: 1rem;
   }
@@ -37,7 +38,6 @@
 .profile__title__content {
   margin-top: 1rem;
   font-size: 20px;
-  font-family: "Anton", sans-serif;
   font-family: "Hahmlet", serif;
 }
 

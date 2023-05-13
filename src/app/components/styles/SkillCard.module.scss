@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Hahmlet:wght@500&display=swap");
-
 .wrapper,
 .wrapper__active {
   width: 300px;
@@ -47,8 +45,6 @@
     color: rgb(36, 36, 36);
     position: relative;
     z-index: 1000;
-    font-family: "Anton", sans-serif;
-    font-family: "DM Serif Display", serif;
     font-family: "Hahmlet", serif;
     transform: rotate(0.04deg);
     font-weight: bold;
@@ -100,8 +96,6 @@
     color: white;
     position: relative;
     z-index: 1000;
-    font-family: "Anton", sans-serif;
-    font-family: "DM Serif Display", serif;
     font-family: "Hahmlet", serif;
     transform: rotate(0.04deg);
   }
