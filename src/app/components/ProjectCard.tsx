@@ -24,11 +24,16 @@ const ProjectCard = ({ project }: { project: projectProps }) => {
         </div>
         <div className={pc.content__link__container}>
           <Link href={project.github} target="blink">
-            <Image src={"/github.png"} alt="github" width={30} height={30} />
+            <Image src={"/github.png"} alt="github" width={27} height={27} />
           </Link>
           <Link href={project.link} target="blink">
-            <Image src={"/link.svg"} alt="link" width={30} height={30} />
+            <Image src={"/link.svg"} alt="link" width={27} height={27} />
           </Link>
+          {project.notion && (
+            <Link href={project.notion} target="blink">
+              <Image src={"/notion.png"} alt="link" width={27} height={27} />
+            </Link>
+          )}
         </div>
         {project.adminID && (
           <div className={pc.content__admin__container}>

@@ -12,6 +12,7 @@ export interface projectProps {
   skills: string[];
   github: string;
   link: string;
+  notion?: string;
   adminID?: string;
   adminPW?: string;
 }
@@ -22,7 +23,11 @@ const Projects = () => {
   useEffect(() => {
     const getProjectData = async () => {
       await axios
-        .get(`${process.env.NEXT_PUBLIC_URL}/api/projects`)
+        .get(`/api/projects`, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
         .then((res) => setProjectData(res.data));
     };
     getProjectData();
@@ -87,11 +92,12 @@ const Projects = () => {
               <h3>프로젝트 소개</h3>
               <p className={projects.info__content}>
                 NerdNest는 Github에서 아이디어를 얻고 기술 블로그를 작성하면
-                일명 "<u>잔디</u>"를 심어 시각적으로 자신의 블로그 기록을 볼 수
-                있도록 합니다. <br />그 외 다른 사용자들과 기술, 정보 공유 등
-                소통 할 수 있는 공간입니다. <br /> 부트캠프에서 만난 분들과 함께
-                진행한 팀 프로젝트입니다. 기획과 디자인, API 명세서 작성 등 같이
-                백엔드 분들과 협업하며 커뮤니케이션 능력을 키웠습니다.
+                일명 &quot;<u>잔디</u>&quot;를 심어 시각적으로 자신의 블로그
+                기록을 볼 수 있도록 합니다. <br />그 외 다른 사용자들과 기술,
+                정보 공유 등 소통 할 수 있는 공간입니다. <br /> 부트캠프에서
+                만난 분들과 함께 진행한 팀 프로젝트입니다. 기획과 디자인, API
+                명세서 작성 등 같이 백엔드 분들과 협업하며 커뮤니케이션 능력을
+                키웠습니다.
               </p>
               <div className={projects.info__team__container}>
                 <h3>팀 구성</h3>
@@ -131,9 +137,7 @@ const Projects = () => {
               </p>
               <div className={projects.info__team__container}>
                 <h3>팀 구성</h3>
-                <span className={projects.info__team__fe__content}>
-                  1명
-                </span>{" "}
+                <span className={projects.info__team__fe__content}>1명</span>
               </div>
             </div>
           </Fade>

@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.container {
+  margin-top: 3rem;
+}
+
 .profile__wrapper {
   @include flex(space-evenly);
   flex-wrap: wrap;

@@ -25,7 +25,7 @@ const SkillCard = (props: SkillProps) => {
               : sc.deploy
           }
         >
-          <p>{title}</p>
+          <p className={onTab ? sc.title__active : ""}>{title}</p>
         </div>
         <div
           className={
