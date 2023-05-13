@@ -13,7 +13,7 @@ const Header = () => {
         </div>
         <div className={header.package__right}>
           <button onClick={(e) => onMoveScroll(e, 700)}>About Me</button>
-          <button onClick={(e) => onMoveScroll(e, 900)}>I Am</button>
+          <button onClick={(e) => onMoveScroll(e, 1000)}>I Am</button>
           <button onClick={(e) => onMoveScroll(e, 1400)}>Skills</button>
           <button onClick={(e) => onMoveScroll(e, 1900)}>Projects</button>
         </div>
